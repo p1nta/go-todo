@@ -23,7 +23,7 @@ type Todo struct {
 var collection *mongo.Collection
 
 func main() {
-	err := godotenv.Load(".env")
+	err := godotenv.Load("../.env")
 
 	if err != nil {
 		log.Fatal("Error to loading .env file")
